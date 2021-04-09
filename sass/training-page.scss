@@ -1,0 +1,275 @@
+.training-con{
+    // background-color: yellowgreen;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.training-card{
+    width: 32%;
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+    margin-bottom: 2rem;
+
+    @media (max-width:768px){
+        width: 49%;
+     }
+
+   
+    @media (max-width:480px){
+        width: 100%;
+     }
+}
+
+.card-header{
+    width: 100%;
+    font-size: 2rem;
+    font-weight: 700;
+    text-align: center;
+    padding: 1rem 0rem;
+    // background-color: #283B3A;
+    color: white;
+
+    // @media (max-width:768px){
+    //     font-size: 1.7rem;
+
+    //  }
+    
+
+}
+
+.cd1{background-color: rgb(255, 153, 0);}
+.cd2{background-color: rgb(89, 184, 0);}
+.cd3{background-color: rgb(89, 184, 0);}
+.cd4{background-color: rgb(44, 202, 213);}
+.cd5{background-color: rgb(44, 202, 213);}
+.cd6{background-color: rgb(44, 202, 213);}
+.cd7{background-color: rgb(171, 10, 50);}
+.cd8{background-color: rgb(171, 10, 50);}
+.cd9{background-color: rgb(0, 89, 255);}
+.cd10{background-color: rgb(56, 6, 114);}
+.cd11{background-color: rgb(100, 34, 86);}
+.cd12{background-color: rgb(255, 0, 4);}
+
+
+
+
+
+
+
+.card-level{
+    width: 100%;
+    height: 5vh;
+    padding: .5rem 0rem;
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: 700;
+    background-color: #AE9553;
+}
+
+.card-week{
+    width: 100%;
+    height: 5vh;
+    padding: .5rem 0rem;
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: 400;
+    background-color: black;
+    color: white;
+}
+
+.card-img1,.card-img2,.card-img3,.card-img4,.card-img5,.card-img6,
+.card-img7,.card-img8,.card-img9,.card-img10,.card-img11,.card-img12{
+    width: 100%;
+    height: 15vh;
+    background-color:white;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    @media (max-width:480px){
+        height: 20vh;
+
+        
+      }
+}
+
+.card-img1{
+    background-image: url(img/imprinting.jpg);
+}
+.card-img2{
+    background-image: url(img/guard-dog.jpg);
+
+}
+.card-img3{
+    background-image: url(img/guard-dog.jpg);
+
+}
+.card-img4{
+    background-image: url(img/slider-1.jpg);
+
+}
+.card-img5{
+    background-image: url(img/slider-1.jpg);
+
+}
+.card-img6{
+    background-image: url(img/dog-obedience.jpg);
+    background-position-y: -2rem;
+
+
+}
+.card-img7{
+    background-image: url(img/protection.jpg);
+
+}
+.card-img8{
+    background-image: url(img/protection.jpg);
+
+}
+.card-img9{
+    background-image: url(img/family.jpg);
+
+}
+.card-img10{
+    background-image: url(img/elite.png);
+    background-position-y: -5rem;
+
+
+}
+.card-img11{
+    background-image: url(img/behane.jpg);
+
+}
+.card-img12{
+    background-image: url(img/service-dog.jpg);
+    background-position-y: -5rem;
+    
+}
+
+
+.card-content-one{
+    width: 100%;
+    height: 30vh;
+    padding: .5rem 0rem;
+    font-size: 1.3rem;
+    padding: 1rem 1rem;
+    background-color: #2E8A81;
+    font-weight: 600;
+    display: flex;
+    // align-items: center;
+    justify-content: center;
+
+    @media (max-width:768px){
+        font-size: 1.5rem;
+
+     }
+
+    @media (max-width:480px){
+        font-size: 1.6rem;
+         height: 35vh;
+        
+      }
+     
+}
+
+.card-content-one-line-one{
+    width: 100%;
+    height: 22vh;
+    padding: .5rem 0rem;
+    font-size: 1.3rem;
+    padding: 1rem 1rem;
+    background-color: #2E8A81;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+
+    @media (max-width:768px){
+        font-size: 1.5rem;
+       height: 23vh;
+
+
+     }
+
+    @media (max-width:480px){
+       font-size: 1.6rem;
+       height: 24vh;
+
+     }
+    
+}
+
+.card-content-one-line-two{
+    width: 100%;
+    height: 25vh;
+    padding: .5rem 0rem;
+    font-size: 1.3rem;
+    padding: 1rem 1rem;
+    background-color: #2E8A81;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+
+    @media (max-width:768px){
+        font-size: 1.4rem;
+
+     }
+
+    @media (max-width:480px){
+        font-size: 1.6rem;
+        height: 25vh;
+
+
+      }
+     
+}
+
+.card-content{
+    width: 100%;
+    height: 30vh;
+    padding: .5rem 1rem;
+    background-color: #283b3a;
+
+    
+    @media (max-width:px){
+        height: 36vh;
+
+      }
+
+    @media (max-width:480px){
+        height: 40vh;
+
+      }
+}
+
+.card-con-box{
+    display: flex;
+    // background-color: yellow;
+}
+.card-text{
+    font-size: 1.2rem;
+    align-items: flex-start;
+    justify-content: flex-start;
+
+    @media (max-width:768px){
+        font-size: 1.4rem;
+      }
+
+    @media (max-width:480px){
+        font-size: 1.6rem;
+      }
+     
+}
+    
+
+.warning{
+    width: 5rem;
+
+}
+
+.notice{
+    color: yellow;
+}

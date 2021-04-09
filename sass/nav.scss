@@ -1,0 +1,436 @@
+
+    .topsmall-nav { 
+      background-color: #181717;
+        width:100%;
+        height:3rem;
+        position:relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 1.5rem 0rem  ;
+         z-index: 10000;
+
+     
+    }
+
+     .small-nav-con{
+         width: 100%;
+        display: flex;
+        justify-content: flex-end;
+
+        // @media (max-width:900px){
+        //     width: 82%;
+        //  }
+        //  @media (max-width:480px){
+        //     width: 93%;
+        //  }
+
+         
+     }
+
+     .slide-nav-items{
+         background-color: #0f0f0f;
+         display: flex;
+         flex-direction: column;
+         position: absolute;
+         top: 10rem;
+         right: -8rem;
+         z-index: 99rem;
+         list-style: none;
+         width: 60%;
+        transform: translateX(100%);
+         transition: all .3s ease-in-out;
+         display: none;
+         visibility: hidden;
+         height: 100vh;
+
+         
+        @media (max-width:900px){
+            display: flex;
+            visibility: visible;
+        }
+
+        
+
+
+         @media (max-width:480px){
+            width: 70%;
+            top: 5rem;
+            padding: 1.5rem 0rem
+        }
+     }
+
+     .nav-icon{
+         display: inline-block;
+
+         @media (min-width:900px){
+            display: none;
+            visibility: hidden;
+        }
+
+
+     }
+
+     .nav-icon span{
+         display: block;
+         height: .3rem;
+         margin: .5rem;
+         width: 3rem;
+         background-color: white;
+         cursor: pointer;
+         position: relative;
+        //  top: 5rem;
+        right: 0;
+        top: 1rem;
+
+        
+     }
+
+     #nav-trigger{
+         opacity: 0;
+         margin: 0;
+         padding: 0;
+         height: 0;
+         width: 0;
+         pointer-events: none;
+     }
+
+     #nav-trigger:checked + .slide-nav-items{
+         transform: translateX(0%);
+     }
+
+
+     .nav-close-icon{
+         position: absolute;
+         font-size: 5rem;
+         color: white;
+         font-weight: 700;
+         top: 3rem;
+         left: 5rem;
+         transform: rotate(45deg);
+         cursor: pointer;
+
+         @media (max-width:480px){
+            left: 3rem;
+        }
+
+        
+       
+     }
+     
+ 
+
+     .slide-nav__list{
+        justify-content: space-between;
+        position: relative;
+        padding: 2rem 3rem;
+        // display: none;
+        // visibility: hidden;
+
+        @media (max-width:480px){
+        padding: 1.5rem 3rem;
+
+        }
+     }
+
+     .slide-nav-icon{
+         width: 2rem;
+         margin-right: 1rem;
+         position: relative;
+         top: .5rem;
+
+     }
+
+     
+
+
+     .slide-nav__links{
+        text-decoration: none;
+        font-size: 2.2rem;
+        color: white;
+        transition: all ease-in-out .3s;
+        font-family:Raleway;
+        font-weight: 600;
+        // padding: 3rem;
+
+        @media (max-width:480px){
+            font-size: 1.4rem;
+        }
+     }
+
+     .slide-nav__links:hover{
+         background-color: gray;
+     }
+
+     .social-icon{
+         width: 2rem;
+         margin-left: 2rem;
+     }
+
+     .phone-icon{
+         width: 2rem;
+         top: .2rem;
+         position: relative;
+     }
+
+     
+     .shopping-icon{
+        width: 3rem;
+        top: .2rem;
+        position: relative;
+        cursor: pointer;
+
+        @media (max-width:900px){
+            margin-right: .5rem;
+
+         }
+
+         @media (max-width:600px){
+            display: none;
+         }
+
+    }
+
+    .big-nav{
+        background-color: white;
+        width: 100%;
+      background-color: #0f0f0f;
+      position: fixed;
+      z-index: 10000;
+      display: block;
+
+    //   @media (max-width:900px){
+    //       display: none;
+    //       visibility: hidden;
+    //   }
+    }
+
+    
+    .nav{ 
+        display: flex;
+        padding:1rem 0rem;
+
+        
+        @media (max-width:900px){
+            padding:1rem 0rem;
+
+         }
+    }
+
+ 
+    .link-con{
+        width: 75%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: center;
+    }
+
+    .link-box{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        margin-bottom: 3.5rem;
+
+        @media (max-width:900px){
+            margin-bottom: 0.5rem;
+         }
+
+       
+    }
+
+    .logo-box{
+        display: flex;
+        width: 25%;
+        align-items: center;
+        text-decoration: none;
+
+        
+        @media (max-width:900px){
+            margin-right: 1rem;
+            width: 28%;
+        }
+
+        @media (max-width:600px){
+            width: 50%;
+        }
+
+
+        @media (max-width:480px){
+            width: 55%;
+
+         }
+    }
+
+    
+    .slogan { 
+        color: #AE9553;
+        position:relative;
+        font-family:Raleway;
+        font-size:1.6rem;
+        letter-spacing:0;
+        font-weight: bolder;
+        width: 30rem;
+
+        @media (max-width:900px){
+        width: 25rem;
+        font-size:1.4rem;
+
+        }
+
+        
+        @media (max-width:600px){
+            display: none;
+         }
+        
+}
+
+    .merchandise-text { 
+        width: 15rem;
+        color: #AE9553;
+        position:relative;
+        font-family:Raleway;
+        font-size:12px;
+        font-weight: 600;
+        cursor: pointer;
+
+        
+        @media (max-width:900px){
+            font-size:1.4rem;
+    
+            }
+
+        @media (max-width:600px){
+            display: none;
+         }
+    }
+
+    .phone-number { 
+        color: #AE9553;
+        position:relative;
+        font-family:Raleway;
+        font-size:22px;
+        font-weight: 600;
+        text-align: right;
+        width: 27%;
+
+        @media (max-width:900px){
+            width: 45%;
+         font-size:2.2rem;
+
+        }
+
+        @media (max-width:600px){
+            width: 100%;
+
+        }
+
+        @media (max-width:480px){
+            width: 100%;
+
+        }
+
+        
+    }
+
+    .logo { 
+        width:9rem;
+        height: 8rem;
+        background-image: url(img/new-logo.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        margin-right: 1rem;
+
+        @media (max-width:900px){
+            width:11rem;
+            width: 9rem;
+        }
+
+        @media (max-width:480px){
+            width:8rem;
+              margin-right: 0rem;
+
+
+         }
+        
+        
+    }
+
+    .logo-text{
+        color: white;
+        width: 70%;
+        font-size: 2rem;
+        font-weight: 700;
+        font-family: raleway;
+
+        @media (max-width:900px){
+           margin-right: .5rem;
+        font-size: 1.8rem;
+
+        }
+
+        @media (max-width:480px){
+            margin-right: -5.5rem;
+            margin-left: .5rem;
+
+         }
+
+
+
+    }
+
+    .logo-text span{
+        color: rgb(196, 0, 0);
+    }
+
+    .nav__items { 
+        position:relative;
+        list-style: none;
+        display: flex;
+        bottom: 0rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+
+        @media (max-width:900px){
+            display: none;
+            visibility: hidden;
+        }
+
+        @media (max-width:900px){
+            display: none;
+            visibility: hidden;
+        }
+    }
+
+    .nav__list{
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        right: 0rem;
+        margin-left: 1rem;
+    }
+
+    .nav__list:nth-child(1){
+        margin-left: 0rem;
+    }
+    
+    .nav__links{
+        display: flex;
+        text-decoration: none;
+        font-size: 1.3rem;
+        color: white;
+        transition: all ease-in-out .3s;
+        font-family:Raleway;
+        font-weight: 600;
+
+    }
+    .nav__links:hover{
+        color: gray;
+    }
+   
+
+

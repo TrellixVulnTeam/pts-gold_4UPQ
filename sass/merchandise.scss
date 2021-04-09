@@ -1,0 +1,61 @@
+.merch-con{
+    width: 100%;
+    display: flex;
+    color: #AE9553;
+    align-content: center;
+    justify-content: center;
+    // margin-bottom: 5rem;
+
+    @media (max-width:480px){
+      flex-direction: column;
+       }
+}
+
+.merch-info{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    // padding: 0rem 1rem;
+}
+
+.merch-product-name{
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+.merch-product-text{
+    font-size: 1.6rem;
+    color: white;
+}
+.merch-product-price{
+    font-size: 2rem;
+    color: #2E8A81;
+    font-weight: 700;
+
+}
+
+.merch-product-pic-one,.merch-product-pic-two,.merch-product-pic-three,
+.merch-product-pic-four,.merch-product-pic-five{
+    width: 40%;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-right: 5rem;
+
+    @media (max-width:480px){
+      height: 30vh;
+      margin-bottom: 2rem;
+     }
+}
+.merch-product-pic-one{
+    background-image: url(img/k9-interactive-bite-pillow.png);
+}.merch-product-pic-two{
+    background-image: url(img/medium-dog-muzzle.jpg);
+}.merch-product-pic-three{
+    background-image: url(img/biting-toy.png);
+}.merch-product-pic-four{
+    background-image: url(img/k9-bite-jacket.png);
+}
+.merch-product-pic-five{
+    background-image: url(img/puppy-bite-cushion.png);
+}

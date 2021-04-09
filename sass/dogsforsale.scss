@@ -1,0 +1,84 @@
+.for-sale-con{
+    width: 100%;
+    display: flex;
+    color: #AE9553;
+    align-content: center;
+    justify-content: center;
+    // margin-bottom: 5rem;
+
+    @media (max-width:480px){
+       flex-direction: column;
+
+         }
+}
+
+.for-sale-info{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    // padding: 0rem 1rem;
+}
+
+.for-sale-product-name{
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+
+.for-sale-product-title{
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+
+.for-sale-product-text{
+    font-size: 1.6rem;
+    color: white;
+}
+.for-sale-product-price{
+    font-size: 2rem;
+    color: #2E8A81;
+    font-weight: 700;
+}
+
+.sold{
+    color: red;
+    font-size: 1.8rem;
+    font-weight: 700;
+    background-color: white;
+    width: 15%;
+    position: relative;
+    text-align: center;
+}
+
+.for-sale-product-pic-one,.for-sale-product-pic-two,.for-sale-product-pic-three,
+.for-sale-product-pic-four,.for-sale-product-pic-five{
+    width: 50%;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-right: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-content: center;
+    text-align: center;
+
+    @media (max-width:480px){
+        width: 100%;
+        margin-right: 1rem;
+        background-position: top;
+        height: 70vh;
+        margin-bottom: 2rem;
+
+         }
+}
+.for-sale-product-pic-one{
+    background-image: url(img/shamshir.jpg);
+}.for-sale-product-pic-two{
+    background-image: url(img/lucian.png);
+}.for-sale-product-pic-three{
+    background-image: url(img/belgium-malinois-litter.png);
+}.for-sale-product-pic-four{
+    background-image: url(img/black-german-shepherd-dog-portrait-beauty.jpg);
+}
+

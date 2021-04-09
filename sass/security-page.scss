@@ -1,0 +1,54 @@
+.we-provide{
+    width: 100%;
+    background:rgba(0,0,0,0.8)url(img/pj.jpeg);
+    // background-position-y:-60rem ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    background-blend-mode:hue;
+
+    @media (max-width:900px){
+        background-position-y:center ;
+
+     }
+}
+
+
+.we-provide-con{
+    display: flex;
+    justify-content: space-between;
+    z-index: 99;
+
+    
+    @media (max-width:480px){
+        flex-direction: column;
+     }
+   
+}
+
+.we-provide-box{
+    height: 50vh;
+    width: 50%;
+    position: relative;
+
+    @media (max-width:480px){
+        width: 100%;
+
+     }
+}
+
+.s-icon{
+    width: 2.5rem;
+    margin-right: 2.5rem;
+    position: relative;
+    top: .5rem;
+}
+
+.provide-txt{
+    display: flex;
+    font-size: 2rem;
+
+}
+
+
+
