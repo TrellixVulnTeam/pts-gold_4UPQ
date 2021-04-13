@@ -52,11 +52,12 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
 
     
-    @media (max-width:480px){
-       flex-direction: column;
-    }
+    // @media (max-width:480px){
+    //    flex-direction: column;
+    // }
 }
 
 .our-mission-img1,.our-mission-img2,.our-mission-img3,.our-mission-img4{
@@ -73,7 +74,16 @@
      }
 
     @media (max-width:480px){
-        width: 100%;
+        width: 25rem;
+        height: 25rem;
+        margin-bottom: 1rem;
+
+     }
+
+     @media (max-width:480px){
+        width: 19.5rem;
+        height: 19.5rem;
+
      }
 
 }
@@ -90,7 +100,7 @@
     background-image: url(/img/g13.jpg);
 }
 .our-mission-img4{
-    background-image: url(/img/about.jpeg);
+    background-image: url(/img/fdv.jpeg);
 }
 
 .youtube{

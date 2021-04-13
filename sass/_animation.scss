@@ -49,6 +49,8 @@
 
 #slider{
     overflow: hidden;
+    position: relative;
+    top: -1rem;
 }
 
 #slider figure img{
@@ -64,3 +66,4 @@
     left: 0;
     animation: slider 20s infinite;
 }
+
