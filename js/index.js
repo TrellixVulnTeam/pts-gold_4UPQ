@@ -56,8 +56,7 @@ document.querySelector('body').insertAdjacentHTML('beforebegin', `
             <div class="slide-nav-items">   
 
                 <label for="nav-trigger" class="nav-close-icon">+</label>
-                <br><br><br><br><br><br><br><br><br><br>
-            
+                <br><br><br><br><br><br>
    
                 <span class="slide-nav__list"><span><img src="img/house-black-silhouette-without-door.svg" alt="" class="slide-nav-icon"></span><a class="slide-nav__links" href="index.html">HOME</a> </span>
                 <span class="slide-nav__list"><span><img src="img/information.svg" alt="" class="slide-nav-icon"></span><a class="slide-nav__links" href="about-us.html">ABOUT US</a></span>

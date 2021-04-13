@@ -149,10 +149,10 @@ html {
 .testimonials .card {
   position: relative;
   width: 100%;
-  height: 85vh;
+  height: 90vh;
   margin: 0 auto;
   background-color: #071110;
-  padding: 6rem 4rem;
+  padding: 2rem 2rem;
   text-align: center;
   overflow: hidden;
   display: flex;
@@ -177,9 +177,9 @@ html {
   z-index: 2; }
 
 .testimonials .card .content p {
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   line-height: 22px;
-  margin-bottom: 20px;
+  margin-bottom: 10rem;
   color: #fff;
   height: 30vh; }
 
@@ -532,7 +532,7 @@ p {
   @media (max-width: 900px) {
     .header-con {
       left: -1rem;
-      top: 6rem;
+      top: 0rem;
       width: 90%; } }
   @media (max-width: 375px) {
     .header-con {
@@ -709,7 +709,7 @@ p {
       background-position-x: -43rem; } }
   @media (max-width: 480px) {
     .dog-training-uk-img {
-      background-position-x: -55rem; } }
+      background-position-x: -80rem; } }
   @media (max-width: 375px) {
     .dog-training-uk-img {
       background-position-x: -82rem; } }
@@ -965,7 +965,12 @@ p {
       visibility: visible; } }
   @media (max-width: 480px) {
     .slide-nav-items {
-      width: 70%;
+      width: 80%;
+      top: 5rem;
+      padding: 1.5rem 0rem; } }
+  @media (max-width: 480px) {
+    .slide-nav-items {
+      width: 77%;
       top: 5rem;
       padding: 1.5rem 0rem; } }
 
@@ -1003,7 +1008,7 @@ p {
   font-size: 5rem;
   color: white;
   font-weight: 700;
-  top: 3rem;
+  top: 1rem;
   left: 5rem;
   transform: rotate(45deg);
   cursor: pointer; }
@@ -1276,10 +1281,8 @@ p {
   width: 100%;
   display: flex;
   justify-content: space-between;
-  align-items: center; }
-  @media (max-width: 480px) {
-    .our-mission-con {
-      flex-direction: column; } }
+  align-items: center;
+  flex-wrap: wrap; }
 
 .our-mission-img1, .our-mission-img2, .our-mission-img3, .our-mission-img4 {
   width: 22rem;
@@ -1293,7 +1296,13 @@ p {
       height: 14rem; } }
   @media (max-width: 480px) {
     .our-mission-img1, .our-mission-img2, .our-mission-img3, .our-mission-img4 {
-      width: 100%; } }
+      width: 25rem;
+      height: 25rem;
+      margin-bottom: 1rem; } }
+  @media (max-width: 480px) {
+    .our-mission-img1, .our-mission-img2, .our-mission-img3, .our-mission-img4 {
+      width: 19.5rem;
+      height: 19.5rem; } }
 
 .our-mission-img1 {
   background-image: url(/img/g16.jpg); }
@@ -1305,7 +1314,7 @@ p {
   background-image: url(/img/g13.jpg); }
 
 .our-mission-img4 {
-  background-image: url(/img/about.jpeg); }
+  background-image: url(/img/fdv.jpeg); }
 
 .youtube {
   background-color: red;
@@ -1485,7 +1494,7 @@ p {
   background-image: url(/img/protection.jpg); }
 
 .card-img9 {
-  background-image: url(/img/family.jpg); }
+  background-image: url(/img/issa.jpeg); }
 
 .card-img10 {
   background-image: url(/img/elite.png);
@@ -1676,7 +1685,12 @@ p {
       visibility: visible; } }
   @media (max-width: 480px) {
     .slide-nav-items {
-      width: 70%;
+      width: 80%;
+      top: 5rem;
+      padding: 1.5rem 0rem; } }
+  @media (max-width: 480px) {
+    .slide-nav-items {
+      width: 77%;
       top: 5rem;
       padding: 1.5rem 0rem; } }
 
@@ -1714,7 +1728,7 @@ p {
   font-size: 5rem;
   color: white;
   font-weight: 700;
-  top: 3rem;
+  top: 1rem;
   left: 5rem;
   transform: rotate(45deg);
   cursor: pointer; }
@@ -2060,7 +2074,12 @@ p {
       visibility: visible; } }
   @media (max-width: 480px) {
     .slide-nav-items {
-      width: 70%;
+      width: 80%;
+      top: 5rem;
+      padding: 1.5rem 0rem; } }
+  @media (max-width: 480px) {
+    .slide-nav-items {
+      width: 77%;
       top: 5rem;
       padding: 1.5rem 0rem; } }
 
@@ -2098,7 +2117,7 @@ p {
   font-size: 5rem;
   color: white;
   font-weight: 700;
-  top: 3rem;
+  top: 1rem;
   left: 5rem;
   transform: rotate(45deg);
   cursor: pointer; }
@@ -2414,7 +2433,9 @@ p {
     left: -400%; } }
 
 #slider {
-  overflow: hidden; }
+  overflow: hidden;
+  position: relative;
+  top: -1rem; }
 
 #slider figure img {
   width: 20%;
