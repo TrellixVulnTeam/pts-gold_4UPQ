@@ -101,6 +101,9 @@ html {
   background-color: #AE9553;
   border: none;
   position: absolute; }
+  @media (max-width: 480px) {
+    .faq-line {
+      width: 60%; } }
 
 .tick-icon-mission {
   width: 2rem;

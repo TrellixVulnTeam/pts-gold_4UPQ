@@ -78,6 +78,11 @@
     background-color: #AE9553;
     border: none;
     position: absolute;
+
+    @media (max-width:480px){
+    width: 60%;
+
+    }
 }
 
 .tick-icon-mission{
