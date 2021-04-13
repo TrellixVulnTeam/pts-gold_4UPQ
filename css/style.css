@@ -523,7 +523,7 @@ p {
   @media (max-width: 480px) {
     .header {
       width: 73%;
-      height: 50VH; } }
+      height: 60VH; } }
 
 .header-con {
   width: 55%;
@@ -768,7 +768,11 @@ p {
   margin-right: 3rem; }
   @media (max-width: 480px) {
     .why-box {
-      width: 48%; } }
+      width: 48%;
+      height: 50vh;
+      margin-right: 0rem;
+      justify-content: center;
+      padding: 1rem; } }
 
 .why-box:nth-child(3) {
   margin-right: 0rem; }
@@ -2414,7 +2418,7 @@ p {
 
 #slider figure img {
   width: 20%;
-  height: 50vh;
+  height: 60vh;
   float: left; }
 
 #slider figure {
