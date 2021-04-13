@@ -124,11 +124,10 @@
         justify-content: space-between;
         position: relative;
         padding: 2rem 3rem;
-        // display: none;
-        // visibility: hidden;
+      
 
         @media (max-width:480px){
-        padding: 1.5rem 3rem;
+        padding: 2rem 3rem;
 
         }
      }
@@ -171,6 +170,7 @@
          width: 2rem;
          top: .2rem;
          position: relative;
+         margin-right: .5rem;
      }
 
      
@@ -306,6 +306,10 @@
          }
     }
 
+    .merch-btn{
+        text-decoration: none;
+    }
+
     .phone-number { 
         color: #AE9553;
         position:relative;
@@ -337,7 +341,7 @@
     .logo { 
         width:9rem;
         height: 8rem;
-        background-image: url(img/new-logo.png);
+        background-image: url(/img/new-logo.png);
         background-repeat: no-repeat;
         background-position: center;
         background-size: contain;

@@ -3,8 +3,6 @@ body {
   font-family: Raleway;
   line-height: 1.5;
   background-color: #272727;
-  background-position: center;
-  background-size: contain;
   margin: 0; }
 
 html {
@@ -68,7 +66,7 @@ html {
   border: none; }
 
 .test-line {
-  width: 10%;
+  width: 15%;
   top: 6rem;
   height: .2rem;
   background-color: #AE9553;
@@ -90,7 +88,15 @@ html {
 
 .header-line {
   width: 10%;
-  top: 12rem;
+  top: 24rem;
+  height: .2rem;
+  background-color: #AE9553;
+  border: none;
+  position: absolute; }
+
+.faq-line {
+  width: 30%;
+  top: 30rem;
   height: .2rem;
   background-color: #AE9553;
   border: none;
@@ -103,13 +109,14 @@ html {
   margin-right: .5rem; }
 
 .banner-con {
-  display: flex; }
+  display: flex;
+  justify-content: space-between; }
   @media (max-width: 480px) {
     .banner-con {
       flex-direction: column; } }
 
 .banner {
-  width: 50%;
+  width: 48%;
   display: block;
   position: relative;
   z-index: -1; }
@@ -117,6 +124,105 @@ html {
     .banner {
       width: 100%;
       margin-bottom: 1rem; } }
+
+.testimonials {
+  position: relative;
+  max-width: 100%;
+  -webkit-box-reflect: below 1px linear-gradient(transparent 70%, #0009); }
+
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 350px;
+  min-height: 350px;
+  background-color: #fff;
+  margin: 0 20px;
+  transition: .5s all ease-in-out; }
+
+.swiper-container-3d .swiper-slide-shadow-left,
+.swiper-container-3d .swiper-slide-shadow-right {
+  background-image: none; }
+
+.testimonials .card {
+  position: relative;
+  width: 100%;
+  height: 85vh;
+  margin: 0 auto;
+  background-color: #071110;
+  padding: 6rem 4rem;
+  text-align: center;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+.testimonials .card .layer {
+  position: absolute;
+  top: calc(100% - 10px);
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(#AE9553, black);
+  z-index: 1;
+  transition: .7s ease-in-out; }
+
+.testimonials .card:hover .layer {
+  top: 0rem; }
+
+.testimonials .card .content {
+  position: relative;
+  z-index: 2; }
+
+.testimonials .card .content p {
+  font-size: 1.4rem;
+  line-height: 22px;
+  margin-bottom: 20px;
+  color: #fff;
+  height: 30vh; }
+
+.testimonials .card .content .imgbox {
+  width: 10rem;
+  height: 10rem;
+  margin: 0 auto;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 4px solid #fff;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.637); }
+
+.testimonials .card .content h2 {
+  font-size: 18px;
+  color: #AE9553;
+  font-weight: 700; }
+
+.testimonials .card .content h2 span {
+  font-size: 14px;
+  color: #2E8A81;
+  transition: 0.5s;
+  font-weight: 700; }
+
+.testimonials .card:hover .content h2 span {
+  color: white; }
+
+.next {
+  position: absolute;
+  width: 2rem;
+  right: -4rem;
+  top: 24rem; }
+  @media (max-width: 600px) {
+    .next {
+      display: none;
+      visibility: hidden; } }
+
+.pre {
+  position: absolute;
+  width: 2rem;
+  left: -4rem;
+  top: 24rem;
+  transform: rotate(180deg); }
+  @media (max-width: 600px) {
+    .pre {
+      display: none;
+      visibility: hidden; } }
 
 main {
   margin: 0 28rem;
@@ -148,7 +254,7 @@ section {
   align-items: stretch; }
 
 .why-choose {
-  background: rgba(0, 0, 0, 0.582) url(img/pj.jpeg);
+  background: rgba(0, 0, 0, 0.582) url(/img/pj.jpeg);
   background-blend-mode: darken;
   background-position: center;
   background-size: cover;
@@ -163,10 +269,8 @@ section {
     .why-choose {
       background-position: -72rem; } }
 
-.why-choose-con {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap; }
+#whyus {
+  background-color: transparent; }
 
 .merchandise {
   position: relative;
@@ -247,7 +351,7 @@ p {
 .footer-box1 {
   width: 10%;
   height: 12vh;
-  background-image: url(img/new-logo.png);
+  background-image: url(/img/new-logo.png);
   background-position: left;
   background-size: contain;
   background-repeat: no-repeat;
@@ -398,25 +502,6 @@ p {
   position: relative;
   margin-right: 1rem; }
 
-.home-img {
-  width: 100%;
-  height: 60VH;
-  position: relative;
-  background-image: url(img/homepic.jpg);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  z-index: -1; }
-  @media (max-width: 900px) {
-    .home-img {
-      height: 80VH; } }
-  @media (max-width: 600px) {
-    .home-img {
-      height: 70VH; } }
-  @media (max-width: 480px) {
-    .home-img {
-      height: 50VH; } }
-
 .header {
   background-color: rgba(0, 0, 0, 0.864);
   width: 50%;
@@ -424,7 +509,8 @@ p {
   position: relative;
   display: flex;
   justify-content: flex-end;
-  align-items: center; }
+  align-items: center;
+  position: absolute; }
   @media (max-width: 900px) {
     .header {
       height: 80VH; } }
@@ -526,13 +612,13 @@ p {
   overflow: hidden; }
 
 .service-card-img1 {
-  background-image: url(img/K92crop.jpg); }
+  background-image: url(/img/K92crop.jpg); }
 
 .service-card-img2 {
-  background-image: url(img/slider-1.jpg); }
+  background-image: url(/img/slider-1.jpg); }
 
 .service-card-img3 {
-  background-image: url(img/imprinting.jpg); }
+  background-image: url(/img/imprinting.jpg); }
 
 .service-card-box {
   background-color: #1f1f1f;
@@ -605,7 +691,7 @@ p {
   background-color: black;
   position: inherit;
   position: relative;
-  background-image: url(img/pl.jpeg);
+  background-image: url(/img/pl.jpeg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover; }
@@ -659,19 +745,33 @@ p {
   font-size: 1.6rem;
   font-weight: 400; }
 
+.why-choose-con {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap; }
+
 .why-box {
-  width: 30%;
+  width: 31%;
+  height: 40vh;
   position: relative;
   outline: solid #AE9553 .3rem;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   padding: 2rem;
-  margin-bottom: 3rem; }
+  margin-bottom: 3rem;
+  margin-right: 3rem; }
   @media (max-width: 480px) {
     .why-box {
       width: 48%; } }
+
+.why-box:nth-child(3) {
+  margin-right: 0rem; }
+
+.why-box:nth-child(6) {
+  margin-right: 0rem; }
 
 .why-title {
   color: white; }
@@ -684,16 +784,28 @@ p {
   text-align: center;
   font-size: 2rem;
   letter-spacing: 0;
-  color: white;
+  color: #2E8A81;
   margin-bottom: 1rem;
-  font-weight: 700; }
+  font-weight: 800; }
 
 .why-txt {
   text-align: center;
-  font-size: 1.4rem;
+  font-size: 1.5rem;
   letter-spacing: 0;
   color: white;
   font-weight: 500; }
+
+.why-btn {
+  background-color: #be9f10;
+  padding: 1rem;
+  border: none;
+  position: absolute;
+  float: right;
+  right: 0rem;
+  bottom: -5rem;
+  border-radius: 0.2rem;
+  transition: all ease-in-out 0.3s;
+  cursor: pointer; }
 
 .client-box {
   background-color: rgba(0, 0, 0, 0.565);
@@ -736,7 +848,7 @@ p {
   height: 40vh;
   background-color: white;
   position: relative;
-  background-image: url(img/medium-dog-muzzle.jpg);
+  background-image: url(/img/medium-dog-muzzle.jpg);
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat; }
@@ -746,7 +858,7 @@ p {
   height: 40vh;
   background-color: white;
   position: relative;
-  background-image: url(img/k9-interactive-bite-pillow.png);
+  background-image: url(/img/k9-interactive-bite-pillow.png);
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat; }
@@ -805,60 +917,9 @@ p {
   display: flex;
   flex-direction: column; }
 
-.test-box {
-  display: flex;
-  justify-content: space-between;
-  align-items: space-between;
-  width: 100%;
-  flex-wrap: wrap; }
-
-.test-card {
-  width: 24%;
-  display: flex;
-  flex-direction: column;
-  background-color: #071110;
-  justify-content: stretch;
-  align-items: center;
-  padding: 4rem; }
-  @media (max-width: 600px) {
-    .test-card {
-      width: 48%;
-      margin-bottom: 2rem;
-      padding: 1rem; } }
-
 .test-icon {
-  width: 6rem; }
-
-.test-card-img {
-  width: 8rem;
-  height: 8rem;
-  border-radius: 50%;
-  background-color: #fafafa;
-  margin-bottom: 1rem; }
-
-.test-text {
-  font-size: 1.3rem;
-  margin-bottom: 2rem;
-  color: white;
-  text-align: center;
-  line-height: 1.6;
-  font-weight: 400;
-  font-family: raleway; }
-
-.test-name {
-  font-size: 1.4rem;
-  margin-bottom: 1rem;
-  color: #be9f10;
-  font-weight: 500;
-  text-align: center;
-  font-weight: 600; }
-
-.test-job {
-  font-size: 1.1rem;
-  margin-bottom: 1rem;
-  color: #2E8A81;
-  font-weight: 500;
-  text-align: center; }
+  width: 4rem;
+  z-index: 2; }
 
 .topsmall-nav {
   background-color: #181717;
@@ -949,7 +1010,7 @@ p {
   padding: 2rem 3rem; }
   @media (max-width: 480px) {
     .slide-nav__list {
-      padding: 1.5rem 3rem; } }
+      padding: 2rem 3rem; } }
 
 .slide-nav-icon {
   width: 2rem;
@@ -978,7 +1039,8 @@ p {
 .phone-icon {
   width: 2rem;
   top: .2rem;
-  position: relative; }
+  position: relative;
+  margin-right: .5rem; }
 
 .shopping-icon {
   width: 3rem;
@@ -1071,6 +1133,9 @@ p {
     .merchandise-text {
       display: none; } }
 
+.merch-btn {
+  text-decoration: none; }
+
 .phone-number {
   color: #AE9553;
   position: relative;
@@ -1093,7 +1158,7 @@ p {
 .logo {
   width: 9rem;
   height: 8rem;
-  background-image: url(img/new-logo.png);
+  background-image: url(/img/new-logo.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
@@ -1224,16 +1289,16 @@ p {
       width: 100%; } }
 
 .our-mission-img1 {
-  background-image: url(img/g16.jpg); }
+  background-image: url(/img/g16.jpg); }
 
 .our-mission-img2 {
-  background-image: url(img/g20.jpeg); }
+  background-image: url(/img/g20.jpeg); }
 
 .our-mission-img3 {
-  background-image: url(img/g13.jpg); }
+  background-image: url(/img/g13.jpg); }
 
 .our-mission-img4 {
-  background-image: url(img/about.jpeg); }
+  background-image: url(/img/about.jpeg); }
 
 .youtube {
   background-color: red;
@@ -1272,7 +1337,6 @@ p {
   display: flex;
   justify-content: space-between;
   align-content: space-between;
-  background-color: #AE9553;
   width: 100%;
   height: 35vh;
   padding: 0rem;
@@ -1389,42 +1453,42 @@ p {
       height: 20vh; } }
 
 .card-img1 {
-  background-image: url(img/imprinting.jpg); }
+  background-image: url(/img/imprinting.jpg); }
 
 .card-img2 {
-  background-image: url(img/guard-dog.jpg); }
+  background-image: url(/img/guard-dog.jpg); }
 
 .card-img3 {
-  background-image: url(img/guard-dog.jpg); }
+  background-image: url(/img/guard-dog.jpg); }
 
 .card-img4 {
-  background-image: url(img/slider-1.jpg); }
+  background-image: url(/img/slider-1.jpg); }
 
 .card-img5 {
-  background-image: url(img/slider-1.jpg); }
+  background-image: url(/img/slider-1.jpg); }
 
 .card-img6 {
-  background-image: url(img/dog-obedience.jpg);
+  background-image: url(/img/dog-obedience.jpg);
   background-position-y: -2rem; }
 
 .card-img7 {
-  background-image: url(img/protection.jpg); }
+  background-image: url(/img/protection.jpg); }
 
 .card-img8 {
-  background-image: url(img/protection.jpg); }
+  background-image: url(/img/protection.jpg); }
 
 .card-img9 {
-  background-image: url(img/family.jpg); }
+  background-image: url(/img/family.jpg); }
 
 .card-img10 {
-  background-image: url(img/elite.png);
+  background-image: url(/img/elite.png);
   background-position-y: -5rem; }
 
 .card-img11 {
-  background-image: url(img/behane.jpg); }
+  background-image: url(/img/behane.jpg); }
 
 .card-img12 {
-  background-image: url(img/service-dog.jpg);
+  background-image: url(/img/service-dog.jpg);
   background-position-y: -5rem; }
 
 .card-content-one {
@@ -1516,7 +1580,7 @@ p {
 
 .we-provide {
   width: 100%;
-  background: rgba(0, 0, 0, 0.8) url(img/pj.jpeg);
+  background: rgba(0, 0, 0, 0.8) url(/img/pj.jpeg);
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
@@ -1550,6 +1614,23 @@ p {
 .provide-txt {
   display: flex;
   font-size: 2rem; }
+
+.question-box {
+  display: flex;
+  align-items: flex-start; }
+
+.question {
+  font-size: 3rem;
+  font-weight: 500;
+  color: #AE9553;
+  position: relative;
+  top: -4rem; }
+
+.question-icon {
+  width: 6rem;
+  display: block;
+  position: relative;
+  margin-right: 2rem; }
 
 .topsmall-nav {
   background-color: #181717;
@@ -1640,7 +1721,7 @@ p {
   padding: 2rem 3rem; }
   @media (max-width: 480px) {
     .slide-nav__list {
-      padding: 1.5rem 3rem; } }
+      padding: 2rem 3rem; } }
 
 .slide-nav-icon {
   width: 2rem;
@@ -1669,7 +1750,8 @@ p {
 .phone-icon {
   width: 2rem;
   top: .2rem;
-  position: relative; }
+  position: relative;
+  margin-right: .5rem; }
 
 .shopping-icon {
   width: 3rem;
@@ -1762,6 +1844,9 @@ p {
     .merchandise-text {
       display: none; } }
 
+.merch-btn {
+  text-decoration: none; }
+
 .phone-number {
   color: #AE9553;
   position: relative;
@@ -1784,7 +1869,7 @@ p {
 .logo {
   width: 9rem;
   height: 8rem;
-  background-image: url(img/new-logo.png);
+  background-image: url(/img/new-logo.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
@@ -1920,16 +2005,16 @@ p {
       margin-bottom: 2rem; } }
 
 .for-sale-product-pic-one {
-  background-image: url(img/shamshir.jpg); }
+  background-image: url(/img/shamshir.jpg); }
 
 .for-sale-product-pic-two {
-  background-image: url(img/lucian.png); }
+  background-image: url(/img/lucian.png); }
 
 .for-sale-product-pic-three {
-  background-image: url(img/belgium-malinois-litter.png); }
+  background-image: url(/img/belgium-malinois-litter.png); }
 
 .for-sale-product-pic-four {
-  background-image: url(img/black-german-shepherd-dog-portrait-beauty.jpg); }
+  background-image: url(/img/black-german-shepherd-dog-portrait-beauty.jpg); }
 
 .topsmall-nav {
   background-color: #181717;
@@ -2020,7 +2105,7 @@ p {
   padding: 2rem 3rem; }
   @media (max-width: 480px) {
     .slide-nav__list {
-      padding: 1.5rem 3rem; } }
+      padding: 2rem 3rem; } }
 
 .slide-nav-icon {
   width: 2rem;
@@ -2049,7 +2134,8 @@ p {
 .phone-icon {
   width: 2rem;
   top: .2rem;
-  position: relative; }
+  position: relative;
+  margin-right: .5rem; }
 
 .shopping-icon {
   width: 3rem;
@@ -2142,6 +2228,9 @@ p {
     .merchandise-text {
       display: none; } }
 
+.merch-btn {
+  text-decoration: none; }
+
 .phone-number {
   color: #AE9553;
   position: relative;
@@ -2164,7 +2253,7 @@ p {
 .logo {
   width: 9rem;
   height: 8rem;
-  background-image: url(img/new-logo.png);
+  background-image: url(/img/new-logo.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
@@ -2266,7 +2355,7 @@ p {
   font-weight: 700; }
 
 .merch-product-pic-one, .merch-product-pic-two, .merch-product-pic-three,
-.merch-product-pic-four, .merch-product-pic-five {
+.merch-product-pic-four, .merch-product-pic-five, .merch-product-pic-six {
   width: 40%;
   background-size: contain;
   background-position: center;
@@ -2274,21 +2363,60 @@ p {
   margin-right: 5rem; }
   @media (max-width: 480px) {
     .merch-product-pic-one, .merch-product-pic-two, .merch-product-pic-three,
-    .merch-product-pic-four, .merch-product-pic-five {
+    .merch-product-pic-four, .merch-product-pic-five, .merch-product-pic-six {
       height: 30vh;
       margin-bottom: 2rem; } }
 
 .merch-product-pic-one {
-  background-image: url(img/k9-interactive-bite-pillow.png); }
+  background-image: url(/img/k9-interactive-bite-pillow.png); }
 
 .merch-product-pic-two {
-  background-image: url(img/medium-dog-muzzle.jpg); }
+  background-image: url(/img/medium-dog-muzzle.jpg); }
 
 .merch-product-pic-three {
-  background-image: url(img/biting-toy.png); }
+  background-image: url(/img/biting-toy.png); }
 
 .merch-product-pic-four {
-  background-image: url(img/k9-bite-jacket.png); }
+  background-image: url(/img/k9-bite-jacket.png); }
 
 .merch-product-pic-five {
-  background-image: url(img/puppy-bite-cushion.png); }
+  background-image: url(/img/puppy-bite-cushion.png); }
+
+.merch-product-pic-six {
+  background-image: url(/img/pst-set.png); }
+
+@keyframes slider {
+  0% {
+    left: 0;
+    left: 0; }
+  20% {
+    left: 0; }
+  25% {
+    left: -100%; }
+  45% {
+    left: -100%; }
+  50% {
+    left: -200%; }
+  70% {
+    left: -200%; }
+  75% {
+    left: -300%; }
+  95% {
+    left: -300%; }
+  100% {
+    left: -400%; } }
+
+#slider {
+  overflow: hidden; }
+
+#slider figure img {
+  width: 20%;
+  height: 50vh;
+  float: left; }
+
+#slider figure {
+  position: relative;
+  width: 500%;
+  margin: 0;
+  left: 0;
+  animation: slider 20s infinite; }

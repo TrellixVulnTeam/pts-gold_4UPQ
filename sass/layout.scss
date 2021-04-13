@@ -46,7 +46,7 @@ section{
 }
 
 .why-choose{
-    background: rgba(0, 0, 0, 0.582) url(img/pj.jpeg);
+    background: rgba(0, 0, 0, 0.582) url(/img/pj.jpeg);
     background-blend-mode: darken;
     background-position: center;
     background-size: cover;
@@ -63,15 +63,11 @@ section{
      }
 }
 
-.why-choose-con{
-// //    margin: 0rem 17rem;
-//    position: relative;
-// //    width: 64%;
-   display: flex;
-   justify-content: space-between;
-//    align-items: center;
-   flex-wrap: wrap;
+#whyus{
+    background-color: transparent;
 }
+
+
 
 .merchandise{
     position: relative;

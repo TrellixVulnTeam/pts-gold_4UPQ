@@ -3,33 +3,33 @@
 
 
 
-.home-img { 
-	width:100%;
-	height:60VH;
-	position:relative;
-	background-image:url(img/homepic.jpg);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    z-index: -1;
+// .home-img { 
+// 	width:100%;
+// 	height:60VH;
+// 	position:relative;
+// 	// background-image:url(/img/homepic.jpg);
+//     background-position: center;
+//     background-size: cover;
+//     background-repeat: no-repeat;
+//     z-index: -1;
 
-    @media (max-width:900px){
-        height: 80VH;
+//     @media (max-width:900px){
+//         height: 80VH;
 
-    }
+//     }
 
-    @media (max-width:600px){
-        height: 70VH;
+//     @media (max-width:600px){
+//         height: 70VH;
 
-    }
+//     }
 
-    @media (max-width:480px){
-        height: 50VH;
+//     @media (max-width:480px){
+//         height: 50VH;
 
-    }
+//     }
 
 
-}
+// }
 .header{ 
 	background-color: rgba(0, 0, 0, 0.864);
 	width:50%;
@@ -38,6 +38,7 @@
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    position: absolute;
 
     
     @media (max-width:900px){
@@ -206,15 +207,15 @@
 }
 
 .service-card-img1 { 
-	background-image: url(img/K92crop.jpg);
+	background-image: url(/img/K92crop.jpg);
 }
 .service-card-img2 { 
-	background-image: url(img/slider-1.jpg);
+	background-image: url(/img/slider-1.jpg);
 
 }
 
 .service-card-img3 {
-	background-image: url(img/imprinting.jpg);
+	background-image: url(/img/imprinting.jpg);
 
  }
 
@@ -318,7 +319,7 @@
     background-color: black;
     position: inherit;
     position: relative;
-	background-image: url(img/pl.jpeg);
+	background-image: url(/img/pl.jpeg);
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
@@ -396,22 +397,43 @@
 	font-weight: 400;
 }
 
+.why-choose-con{
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+ }
 
 .why-box { 
-	width:30%;
+	width:31%;
+    height: 40vh;
 	position:relative;
     outline: solid #AE9553 .3rem;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     padding: 2rem;
     margin-bottom: 3rem;
+    margin-right: 3rem;
+
+
 
     @media (max-width:480px){
         width: 48%;
         }
 }
+
+.why-box:nth-child(3) { 
+    margin-right: 0rem;
+}
+
+.why-box:nth-child(6) { 
+    margin-right: 0rem;
+}
+
+
 
 .why-title{
     color: white;
@@ -427,9 +449,9 @@
 	text-align:center;
 	font-size:2rem;
 	letter-spacing:0;
-    color:white;
+    color:#2E8A81;
     margin-bottom: 1rem;
-	font-weight: 700;
+	font-weight: 800;
 
     // @media (max-width:900px){
     //     font-size:1.4rem;
@@ -438,7 +460,7 @@
 
 .why-txt{
 	text-align:center;
-	font-size:1.4rem;
+	font-size:1.5rem;
 	letter-spacing:0;
     color: rgb(255, 255, 255);
 	font-weight: 500;
@@ -446,6 +468,21 @@
     // @media (max-width:900px){
     //     font-size:1.1rem;
     // }
+}
+
+.why-btn{
+    // width:20%;
+    background-color: rgb(190, 159, 16);
+    padding: 1rem;
+    border: none;
+	position: absolute;
+	float: right;
+	right: 0rem;
+    bottom: -5rem;
+    // top: 5rem;
+	border-radius: 0.2rem;
+	transition: all ease-in-out 0.3s;
+	cursor: pointer;
 }
 
 .client-box{
@@ -466,14 +503,10 @@
      text-align: center;}
 
 }
-.merch__title{
-    // color: rgb(255, 255, 255);
-	// font-size:20px;
-	// letter-spacing:0;
-    // margin: 3rem 0rem;
-    // position: relative;
+// .merch__title{
+   
 
-}
+// }
 
 .merchandise-con{
     // background-color: salmon;
@@ -511,7 +544,7 @@
     height: 40vh;
     background-color: rgb(255, 255, 255) ;
     position: relative;
-     background-image:url(img/medium-dog-muzzle.jpg);
+     background-image:url(/img/medium-dog-muzzle.jpg);
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
@@ -522,7 +555,7 @@
     height: 40vh;
     background-color: rgb(255, 255, 255) ;
     position: relative;
-     background-image:url(img/k9-interactive-bite-pillow.png);
+     background-image:url(/img/k9-interactive-bite-pillow.png);
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
@@ -598,93 +631,17 @@
     position: relative;
     display: flex;
     flex-direction: column;
-    // justify-content: start;
-	// align-items: flex-start;
+    
 }
 
-.test__title{
-	// font-family:Raleway;
-    // color: rgb(255, 255, 255);
-	// font-size:20px;
-	// letter-spacing:0;
-    // margin: 3rem 0rem;
-    // position: relative;
 
-}
-
-.test-box{
-    //  background-color: sandybrown;
-     display: flex;
-     justify-content: space-between;
-     align-items: space-between;
-     width: 100%;
-     flex-wrap: wrap;
-
-
-    //  @media (max-width:480px){
-    //     flex-direction: column;
-
-    // }
-}
-
-.test-card{
-    width: 24%;
-    display: flex;
-    flex-direction: column;
-	background-color: #071110;
-	justify-content: stretch;
-	align-items: center;
-	padding: 4rem;
-
-    @media (max-width:600px){
-        width: 48%;
-        margin-bottom: 2rem;
-        padding: 1rem;
-    }
-
-}
 
 
 .test-icon{
-	width: 6rem;
+	width: 4rem;
+    z-index: 2;
 
 }
 
-.test-card-img{
-    width: 8rem;
-	height: 8rem;
-	border-radius: 50%;
-    background-color: rgb(250, 250, 250);
-    margin-bottom: 1rem;
-}
-.test-text{
-    font-size: 1.3rem;
-    margin-bottom: 2rem;
-    color: rgb(255, 255, 255);
-	text-align: center;
-	line-height: 1.6;
-	font-weight: 400;
-	font-family: raleway;
-
-    // color: rgb(190, 159, 16);
-}
-
-.test-name{
-	font-size: 1.4rem;
-    margin-bottom: 1rem;
-    color: rgb(190, 159, 16);
-    font-weight: 500;
-	text-align: center;
-	font-weight: 600;
-
-}
-
-.test-job{
-		font-size: 1.1rem;
-		margin-bottom: 1rem;
-		color: #2E8A81;
-		font-weight: 500;
-		text-align: center;
-}
 
 

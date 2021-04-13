@@ -24,10 +24,9 @@ document.querySelector('body').insertAdjacentHTML('beforebegin', `
             <div class="link-con">
                 <div class="link-box">
                     <div class="slogan">The avant-garde of security canines worldwide</div>
-                    <span><img src="img/shopping-bag.svg"" class=" shopping-icon"></span>
-                    <div class="merchandise-text">Check out our Merchandise</div>
-                    <div class="phone-number"><span><img src="img/telephone.svg"" class=" phone-icon"></span> 0800 123
-                        4678
+                    <a href="merchandise.html"><span><img src="img/shopping-bag.svg"" class=" shopping-icon"></span></a>
+                    <a class="merch-btn" href="merchandise.html"><div class="merchandise-text">Check out our Merchandise</div></a>
+                    <div class="phone-number"><span><img src="img/telephone.svg"" class=" phone-icon"></span>+220 222 0333
                     </div>
 
                 </div>
@@ -135,9 +134,9 @@ document.querySelector('body').insertAdjacentHTML('beforeend', `
         <br>
 
         <span><img src="img/telephone.svg" alt="" class="footer-phone-icon"></span>
-        <span><span class="footer-number">0800 123 4567</span>
+        <span><span class="footer-number">+220 222 0333</span>
         <br>
-        <span><img src="img/telephone.svg" alt="" class="footer-phone-icon"></span><span class="footer-number">0800 123 4567</span>
+        <span><img src="img/telephone.svg" alt="" class="footer-phone-icon"></span><span class="footer-number">+44 7960600613</span>
         <br>
         <br>
         <div class="footer-address">
