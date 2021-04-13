@@ -1,0 +1,23 @@
+.question-box{
+    display: flex;
+    align-items: flex-start;
+}
+.question{
+    font-size: 3rem;
+    font-weight: 500;
+    color: #AE9553;
+    position: relative;
+    top: -4rem;
+}
+
+.answer{
+
+}
+
+.question-icon{
+    width: 6rem;
+    display: block;
+    position: relative;
+    margin-right: 2rem;
+}
+
